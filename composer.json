@@ -1,5 +1,5 @@
 {
-    "name": "dit/rabbitmq-bundle",
+    "name": "letdoittoday/rabbitmq-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "require": {
