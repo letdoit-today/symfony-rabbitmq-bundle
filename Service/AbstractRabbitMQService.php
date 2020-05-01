@@ -24,12 +24,9 @@ abstract class AbstractRabbitMQService implements RabbitMQServiceInterface
         $this->params = $params;
     }
 
-    abstract protected function getExchange();
+    abstract protected function getExchange(): string;
 
-    protected function getType(): bool
-    {
-        return false;
-    }
+    abstract protected function getType(): string;
 
     protected function getPassive(): bool
     {
@@ -43,7 +40,7 @@ abstract class AbstractRabbitMQService implements RabbitMQServiceInterface
 
     protected function getAutoDelete(): bool
     {
-        return false;
+        return true;
     }
 
     protected function getExclusive(): bool

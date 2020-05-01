@@ -32,7 +32,7 @@ abstract class AbstractDirectReceiverService extends AbstractRabbitMQService imp
         $this->receiveRabbitMQMessage($callback, $this->getRoutingKeys());
     }
 
-    protected function getExchange()
+    protected function getType(): string
     {
         return 'direct';
     }

@@ -19,7 +19,7 @@ abstract class AbstractDirectEmitterService extends AbstractRabbitMQService impl
         $this->emitRabbitMQMessage($routingKey, $message);
     }
 
-    protected function getExchange()
+    protected function getType(): string
     {
         return 'direct';
     }
