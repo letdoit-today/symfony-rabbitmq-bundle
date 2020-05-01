@@ -49,6 +49,9 @@ abstract class AbstractDirectReceiverService extends AbstractRabbitMQService imp
      */
     protected function camelize(string $str): string
     {
-        return str_replace(' ', '', ucwords(str_replace('_', ' ', $str)));
+        $str = str_replace('_', ' ', $str);
+        $str = str_replace('.', ' ', $str);
+
+        return str_replace(' ', '', ucwords($str));
     }
 }
