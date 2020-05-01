@@ -1,0 +1,11 @@
+parametes:
+    env(RABBITMQ_HOST): 'localhost'
+    env(RABBITMQ_PORT): 5672
+    env(RABBITMQ_USERNAME): 'guest'
+    env(RABBITMQ_PASSWORD): 'guest'
+
+    letdoittoday.rabbitmq:
+        host: '%env(string:RABBITMQ_HOST)%'
+        port: '%env(int:RABBITMQ_PORT)%'
+        username: '%env(string:RABBITMQ_USERNAME)%'
+        password: '%env(string:RABBITMQ_PASSWORD)%'
