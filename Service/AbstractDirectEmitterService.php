@@ -16,7 +16,7 @@ abstract class AbstractDirectEmitterService extends AbstractRabbitMQService impl
      */
     public function emitMessage(string $message, string $routingKey)
     {
-        $this->emitRabbitMQMessage($routingKey, $message);
+        $this->emitRabbitMQMessage($message, $routingKey);
     }
 
     protected function getType(): string
