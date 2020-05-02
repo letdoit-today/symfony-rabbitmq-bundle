@@ -25,7 +25,7 @@ abstract class AbstractDirectReceiverService extends AbstractRabbitMQService imp
             if (method_exists($this, $functionName)) {
                 $this->{$functionName}($msg->body);
             } else {
-                $this->handleDefault();
+                $this->handleDefault($routingKey, $msg->body);
             }
         };
 
@@ -37,7 +37,7 @@ abstract class AbstractDirectReceiverService extends AbstractRabbitMQService imp
         return 'direct';
     }
 
-    protected function handleDefault()
+    protected function handleDefault(string $routingKey, string $body)
     {
     }
 
