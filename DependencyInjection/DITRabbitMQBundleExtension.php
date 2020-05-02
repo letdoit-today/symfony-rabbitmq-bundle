@@ -11,7 +11,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 /**
  * Class Biz5sRabbitMQCoreExtension
  */
-class Biz5sRabbitMQCoreExtension extends Extension
+class DITRabbitMQBundleExtension extends Extension
 {
     /**
      * @inheritDoc
