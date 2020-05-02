@@ -1,4 +1,4 @@
-parametes:
+parameters:
     env(RABBITMQ_HOST): 'localhost'
     env(RABBITMQ_PORT): 5672
     env(RABBITMQ_USERNAME): 'guest'
