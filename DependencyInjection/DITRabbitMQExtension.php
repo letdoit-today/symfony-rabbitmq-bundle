@@ -9,9 +9,9 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 /**
- * Class Biz5sRabbitMQCoreExtension
+ * Class DITRabbitMQExtension
  */
-class DITRabbitMQBundleExtension extends Extension
+class DITRabbitMQExtension extends Extension
 {
     /**
      * @inheritDoc
